@@ -1,9 +1,9 @@
 # WireGuard
 
-- WireGuard ½éÉÜ
-- WireGuard WindowsÏÂµÄ°²×°ÓëÅäÖÃ
-- WireGuard Android ¿Í»§¶ËµÄ°²×°ÓëÅäÖÃ
+- WireGuard ä»‹ç»
+- WireGuard Windowsä¸‹çš„å®‰è£…ä¸é…ç½®
+- WireGuard Android å®¢æˆ·ç«¯çš„å®‰è£…ä¸é…ç½®
 
 ---
 
-1. WireGuard ½éÉÜ
+1. WireGuard ä»‹ç»
