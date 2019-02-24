@@ -3,15 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>demo</title>
-	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
 	<script type="text/javascript">
 	function compile(){
 		var iframe = document.getElementById("content").contentWindow;
-		var text = iframe.document.body;
+		var text = iframe.document.body.getElementsByTagName("pre").innerText;
 		console.log(text);
-		<!--var converter = new showdown.Converter();-->
-		<!--var html = converter.makeHtml(text);-->
-		<!--document.getElementById("show").innerHTML = html;-->
+		var converter = new showdown.Converter();
+		var html = converter.makeHtml(text);
+		document.getElementById("show").innerHTML = html;
 	}
 </script>
 	<style>
