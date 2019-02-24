@@ -7,7 +7,7 @@
 	<script type="text/javascript">
 	function compile(){
 		var iframe = document.getElementById("content").contentWindow;
-		var text = iframe.document.body.getElementsByTagName("pre").innerText;
+		var text = iframe.document.body.getElementsByTagName("pre").innerHTML;
 		console.log(text);
 		var converter = new showdown.Converter();
 		var html = converter.makeHtml(text);
