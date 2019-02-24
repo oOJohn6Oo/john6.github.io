@@ -5,12 +5,20 @@
 	<title>demo</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
 	<script type="text/javascript">
+	function readFile(filename){
+		var fso = new ActiveXObject("Scripting.FileSystemObject");
+		var f = fso.OpenTextFile(filename,1);
+		var s = "";
+		while (!f.AtEndOfStream)
+			s += f.ReadLine()+"\n";
+		f.Close();
+		return s;
+	}
 	function compile(){
-		var iframe = document.getElementById("content").contentWindow;
-		var text = iframe.document.body.getElementsByTagName("pre").innerHTML;
+		var text = iframe1.body.innerText;
 		console.log(text);
 		var converter = new showdown.Converter();
-		var html = converter.makeHtml(text);
+		var html = converter.makeHtml(text)
 		document.getElementById("show").innerHTML = html;
 	}
 </script>
@@ -36,9 +44,8 @@
 </style>
 </head>
 <body>
-	<iframe id="content" style="height:50%;width:100%;" src="wireguard.md"></iframe>
+<iframe src="wireguard.md" name=iframe1></iframe>
     <div id="show" style="height:100%;width:70%;margin:0 auto;"></div>
-	
 <script type="text/javascript">
 window.onload = function(){
 compile();
