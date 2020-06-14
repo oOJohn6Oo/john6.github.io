@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		刘强
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <script type="text/javascript">
+		
+		function setRem(width) {
+		  // 设置页面根节点字体大小
+			let w = document.getElementById("content").offsetWidth;
+			console.log(w);
+		  document.documentElement.style.fontSize = w / 610*100 + 'px';
+		}
+		window.addEventListener('resize', setRem);
+		window.onload = setRem;
+    </script>
+	<style type="text/css">
+		html,body{background-color:white;height:100%;margin:0;}
+		a{text-decoration:none;}
+		div{box-sizing:border-box;}
+			
+			
+		#content{margin:8px auto; background-color:white; max-width:50%;min-width:610px;;height:100%; border-radius:0px;overflow:scroll;box-shadow:#999 0 0 8px;}
+		
+		#head{background-color:#373d48;width:100%;padding:0.24rem;display:flex;flex-direction:column;}
+		#title_name{font-size:0.36rem;line-height:0.46rem;color:white;}
+		#title_title{font-size:0.16rem;line-height:0.21rem;color:white;margin-bottom:0.08rem;}
+		#title_contact{font-size:0.11rem;line-height:0.21rem;color:white;width:100%;font-weight:bold;}
+		#title_contact > span{font-weight:200;}
+		
+		
+		#item{background-color:white;width:100%;padding:0.24rem 0.24rem 0 0.24rem;}
+		
+		#item > p{border-bottom:1px solid #ccc;font-size:0.16rem;line-height:0.21rem;font-weight:bold;margin:0;}
+		#item > div{font-size:11px;line-height:16px;padding-top:10px;}
+		
+		#item > div > span{line-height:0.17rem;width:1.1rem;font-weight:bold;margin-right:0.08rem;display:block;text-align:left;float:left;}
+		#item > div > div{margin-left:1.20rem;}
+		#item > div > div > p{font-size:0.14rem;font-weight:bold;margin:0 0 0.05rem 0;}
+		#item > div > div > p1{font-weight:bold;margin:0 0 0.05rem 0;font-style:italic;}
+		#item > div > div > ul{margin:0;padding:0;}
+		#item > div > div > ul>li{margin:0 0 0 0.16rem;user-select:none;border:0;padding:0;}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div id="head">
+				<span id="title_name">刘 强</span>
+				<span id="title_title">安卓开发工程师</span>
+				<div id="title_contact">电话&nbsp;&nbsp;&nbsp;<span>18229759005</span></div>
+				<div id="title_contact">邮箱&nbsp;&nbsp;&nbsp;<span>john6.lq@gmail.com</span></div>
+			</div>
+				
+			<div id="item">
+				<p>工作经历</p>
+				<div>
+					<span>2019-07 - 至今</span>
+					<div>
+						<p>安卓开发工程师</p>
+						<p1>上海莫能臣智能科技有限公司,  上海</p1>
+						<ul>
+							<li>负责《好多曲谱》 Android 端 APP 的研发，独立完成编码-上架全过程，目前新版本仍在迭代，核心功能是听音智能翻页，涉及音频的数据处理、编码转换、JNI 算法交互等技术点。使用 Jetpack 新技术和 MVP 架构完成项目。</li>
+							<li>协同产品经理、UI 设计师、后端开发工程师、算法工程师，在维护好旧版本的同时，快速高效迭代新版本。</li>
+							<li>忙里偷忙，关注各平台最新安卓技术资讯及博客分享，不断学习进步，优化代码质量、提高APP 启动速度、最小化包体积大小、优化交互设计等。</li>
+							<li>积极向产品经理和 UI 设计师输出 Android 上的一些新的功能特性，并结合国内安卓生态环境，在项目开发中给出一些我认为更好的方案或建议。</li>
+						</ul>
+					</div>
+
+				</div>
+				<div>
+					<span>2018-07 - 2019-04</span>
+					<div>
+						<p>安卓开发工程师</p>
+						<p1>上海得帆信息技术有限公司,  上海</p1>
+						<ul>
+							<li>参与香港中文大学移动门户及三菱智能电梯等 APP 的开发工作，均已上线。使用 RxAndroid 以及 OKHTTP 还有 Glide 等主流框架，负责接入信鸽推送、高德地图等功能性的API。</li>
+							<li>自定义View、事件分发机制以及多线程处理等概念“从理论到实战”。</li>
+							<li>开始积累项目经验，定期总结、分享技术问题及解决方案。</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="item">
+				<p>教育经历</p>
+				<div>
+					<span>2015-09 - 2019-06</span>
+					<div>
+						<p>本科, 网络工程</p>
+						<p1>长沙理工大学</p1>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+<html>
