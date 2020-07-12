@@ -22,8 +22,11 @@
 		a{text-decoration:none;}
 		div{box-sizing:border-box;}
 			
+		#content { -ms-overflow-style: none; }
+		#content::-webkit-scrollbar { width: 0 !important }
+		#content{ overflow: -moz-scrollbars-none; }
 			
-		#content{margin:8px auto; background-color:white; max-width:50%;min-width:610px;;height:100%; border-radius:0px;overflow:scroll;box-shadow:#999 0 0 8px;}
+		#content{margin:8px auto; background-color:white; max-width:50%;min-width:450px;;height:100%; border-radius:0px;overflow:scroll;box-shadow:#999 0 0 8px;}
 		
 		#head{background-color:#373d48;width:100%;padding:0.24rem;display:flex;flex-direction:column;}
 		#title_name{font-size:0.36rem;line-height:0.46rem;color:white;}
@@ -31,20 +34,27 @@
 		#title_contact{font-size:0.11rem;line-height:0.21rem;color:white;width:100%;font-weight:bold;}
 		#title_contact > span{font-weight:200;}
 		
+		#desc{font-size:0.11rem;padding:0.15rem 0.24rem 0 0.24rem;}
 		
 		#item{background-color:white;width:100%;padding:0.24rem 0.24rem 0 0.24rem;}
 		
 		#item > p{border-bottom:1px solid #ccc;font-size:0.16rem;line-height:0.21rem;font-weight:bold;margin:0;}
-		#item > div{font-size:11px;line-height:16px;padding-top:10px;}
+		#item > div{font-size:0.11rem;line-height:0.16rem;padding-top:0.1rem;}
 		
 		#item > div > span{line-height:0.17rem;width:1.1rem;font-weight:bold;margin-right:0.08rem;display:block;text-align:left;float:left;}
 		#item > div > div{margin-left:1.20rem;}
 		#item > div > div > p{font-size:0.14rem;font-weight:bold;margin:0 0 0.05rem 0;}
-		#item > div > div > p1{font-weight:bold;margin:0 0 0.05rem 0;font-style:italic;}
+		#item > div > div > p1{font-weight:bold;margin:0 0 0.05rem 0;font-style:italic;display:block;}
 		#item > div > div > ul{margin:0;padding:0;}
 		#item > div > div > ul>li{margin:0 0 0 0.16rem;user-select:none;border:0;padding:0;}
 		
+		#skill_container{display:flex;height:0.16rem;margin-top:0.05rem;}
+		#skill_container>span{flex:1;font-size:0.11rem;line-height:0.16rem;}
+		#skill_container>div{width:1.2rem;height:0.07rem;background:#d5d6d6;margin-right:0.08rem;margin-top:0.05rem;}
+		#skill_container>div>div{background:#373d48;height:100%}
 		
+		#hobby_container{display:flex;margin-top:0.05rem;flex-direction:column;}
+		#hobby_container>span{font-size:0.11rem;line-height:0.16rem;margin-top:0.05rem;}
 		</style>
 	</head>
 	<body>
@@ -55,6 +65,48 @@
 				<div id="title_contact">电话&nbsp;&nbsp;&nbsp;<span>18229759005</span></div>
 				<div id="title_contact">邮箱&nbsp;&nbsp;&nbsp;<span>john6.lq@gmail.com</span></div>
 			</div>
+			<div id="desc">为追求自己喜欢的东西乐此不疲，代码如是，做人如是。</div>
+			<div id="item">
+				<p>个人技能</p>
+				<div>
+					<div id="skill_container">
+						<span>Kotlin</span>
+						<div>
+							<div style="width:80%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>Java</span>
+						<div>
+							<div style="width:60%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>HTML + CSS</span>
+						<div>
+							<div style="width:70%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>Git</span>
+						<div>
+							<div style="width:70%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>Linux</span>
+						<div>
+							<div style="width:40%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>Android逆向</span>
+						<div>
+							<div style="width:20%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 				
 			<div id="item">
 				<p>工作经历</p>
@@ -63,11 +115,13 @@
 					<div>
 						<p>安卓开发工程师</p>
 						<p1>上海莫能臣智能科技有限公司,  上海</p1>
+						<p2>负责《好多曲谱》Android 端 APP 的研发及维护工作，独立完成编码-上架全过程。项目核心功能为听音智能翻页，涉及音频的数据处理、编码转换、JNI 算法交互等技术点。</p2>
 						<ul>
-							<li>负责《好多曲谱》 Android 端 APP 的研发，独立完成编码-上架全过程，目前新版本仍在迭代，核心功能是听音智能翻页，涉及音频的数据处理、编码转换、JNI 算法交互等技术点。使用 Jetpack 新技术和 MVP 架构完成项目。</li>
-							<li>协同产品经理、UI 设计师、后端开发工程师、算法工程师，在维护好旧版本的同时，快速高效迭代新版本。</li>
+							<li>使用Kotlin开发，采用Jetpack、Retrofit、RxBus等组件完成架构，Presenter分离网络层方便单元测试。</li>
+							<li>扁平化布局，使用自定义View完成复杂UI，在高性能、高质量完成需求的前提下给界面点缀合适的动效。为达到特定效果，开始深入源码寻找突破口。</li>
+							<li>使用espresso及bash脚本加快测试速度，提高迭代效率。</li>
+							<li>协同组内成员，快速高效迭代版本；结合国内安卓生态环境，在UI和功能设计中积极建言献策。</li>
 							<li>忙里偷忙，关注各平台最新安卓技术资讯及博客分享，不断学习进步，优化代码质量、提高APP 启动速度、最小化包体积大小、优化交互设计等。</li>
-							<li>积极向产品经理和 UI 设计师输出 Android 上的一些新的功能特性，并结合国内安卓生态环境，在项目开发中给出一些我认为更好的方案或建议。</li>
 						</ul>
 					</div>
 
@@ -78,7 +132,7 @@
 						<p>安卓开发工程师</p>
 						<p1>上海得帆信息技术有限公司,  上海</p1>
 						<ul>
-							<li>参与香港中文大学移动门户及三菱智能电梯等 APP 的开发工作，均已上线。使用 RxAndroid 以及 OKHTTP 还有 Glide 等主流框架，负责接入信鸽推送、高德地图等功能性的API。</li>
+							<li>参与香港中文大学移动门户及三菱智能电梯等 APP 的开发工作。使用 RxAndroid 以及 OKHTTP 还有 Glide 等主流框架，负责用户模块的开发，接入信鸽推送、高德地图等功能性API。</li>
 							<li>自定义View、事件分发机制以及多线程处理等概念“从理论到实战”。</li>
 							<li>开始积累项目经验，定期总结、分享技术问题及解决方案。</li>
 						</ul>
@@ -95,6 +149,17 @@
 					</div>
 				</div>
 			</div>
+			<div id="item">
+				<p>兴趣爱好</p>
+				<div>
+					<div id="hobby_container">
+						<span style="margin:0 0;">台球</span>
+						<span>钓鱼</span>
+						<span>关注科技资讯，折腾数码产品。</span>
+					</div>
+				</div>
+			</div>
+		</div>
 		</div>
 </body>
 <html>
