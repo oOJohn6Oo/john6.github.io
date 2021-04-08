@@ -1,0 +1,38 @@
+html,body{background-color:#fefdf8;height:100%;margin:0;}
+a{text-decoration:none;color:#8d5d31;font-weight:500;}
+div{box-sizing:border-box;}
+	
+#content { -ms-overflow-style: none; }
+#content::-webkit-scrollbar { width: 0 !important }
+#content{ overflow: -moz-scrollbars-none; }
+	
+#content{width:100%;;height:100%; overflow:scroll;}
+
+#head{width:100%;padding:0.24rem;display:flex;flex-direction:column;color:#8d5d31;}
+#title_name{font-size:0.36rem;line-height:0.46rem;font-weight:bold;}
+#title_title{font-size:0.16rem;line-height:0.21rem;margin-bottom:0.08rem;font-weight:bold;}
+#title_contact{font-size:0.11rem;line-height:0.21rem;width:100%;font-weight:bold;}
+#title_contact>span{font-weight:normal;}
+
+#desc{font-size:0.11rem;padding:0.15rem 0.24rem 0 0.24rem;color:#8d5d31;}
+
+#item{width:100%;padding:0.24rem 0.24rem 0 0.24rem;color:#8d5d31;}
+
+#item > p{border-bottom:1px solid #eeede8;font-size:0.16rem;line-height:0.21rem;font-weight:bold;margin:0;}
+#item > div{font-size:0.11rem;line-height:0.16rem;padding-top:0.1rem;}
+
+#item > div > span{line-height:0.17rem;width:1.1rem;font-weight:bold;margin-right:0.08rem;text-align:left;float:left;}
+#item > div > div{margin-left:1.20rem;}
+#item > div > div > p{font-size:0.14rem;font-weight:bold;margin:0 0 0.05rem 0;}
+#item > div > div > p1{font-weight:bold;margin:0 0 0.05rem 0;display:block;}
+#item > div > div > p2{margin:0 0 0.02rem 0;display:block;}
+#item > div > div > ul{margin:0;padding:0;}
+#item > div > div > ul>li{margin:0 0 0 0.16rem;user-select:none;border:0;padding:0;}
+
+#skill_container{display:flex;height:0.16rem;margin-top:0.05rem;}
+#skill_container>span{flex:1;font-size:0.11rem;line-height:0.16rem;}
+#skill_container>div{width:1.2rem;height:0.07rem;background:#eeede8;margin-right:0.08rem;margin-top:0.05rem;border-radius:0.035rem;}
+#skill_container>div>div{background:#AE8764;height:100%;border-radius:0.035rem;}
+
+#hobby_container{display:flex;margin-top:0.05rem;flex-direction:column;}
+#hobby_container>span{font-size:0.11rem;line-height:0.16rem;margin-top:0.05rem;}
