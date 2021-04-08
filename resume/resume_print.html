@@ -6,7 +6,7 @@
 	</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
-    <script type="text/javascript">
+	 <script type="text/javascript">
 		function setRem(width) {
 		  // 设置页面根节点字体大小
 			let w = document.getElementById("content").offsetWidth;
@@ -39,11 +39,11 @@
 		#item > p{border-bottom:1px solid #ccc;font-size:0.16rem;line-height:0.21rem;font-weight:bold;margin:0;}
 		#item > div{font-size:0.11rem;line-height:0.16rem;padding-top:0.1rem;}
 		
-		#item > div > span{line-height:0.17rem;width:1.1rem;font-weight:bold;margin-right:0.08rem;display:block;text-align:left;float:left;}
+		#item > div > span{line-height:0.17rem;width:1.1rem;font-weight:bold;margin-right:0.08rem;text-align:left;float:left;}
 		#item > div > div{margin-left:1.20rem;}
 		#item > div > div > p{font-size:0.14rem;font-weight:bold;margin:0 0 0.05rem 0;}
 		#item > div > div > p1{font-weight:bold;margin:0 0 0.05rem 0;font-style:italic;display:block;}
-		#item > div > div > p2{margin:0 0 0.1rem 0;font-style:italic;display:block;}
+		#item > div > div > p2{margin:0 0 0.02rem 0;font-style:italic;display:block;}
 		#item > div > div > ul{margin:0;padding:0;}
 		#item > div > div > ul>li{margin:0 0 0 0.16rem;user-select:none;border:0;padding:0;}
 		
@@ -54,17 +54,17 @@
 		
 		#hobby_container{display:flex;margin-top:0.05rem;flex-direction:column;}
 		#hobby_container>span{font-size:0.11rem;line-height:0.16rem;margin-top:0.05rem;}
-		</style>
-	</head>
-	<body>
-		<div id="content">
+	</style>
+</head>
+<body>
+	<div id="content">
 			<div id="head">
 				<span id="title_name">刘 强</span>
 				<span id="title_title">安卓开发工程师</span>
 				<div id="title_contact">电话&nbsp;&nbsp;&nbsp;<span>18229759005</span></div>
 				<div id="title_contact">邮箱&nbsp;&nbsp;&nbsp;<span>john6.lq@gmail.com</span></div>
 			</div>
-			<div id="desc">23岁 | 安徽安庆 | 一年正式工作经验 | 独立开发经历</div>
+			<div id="desc">24岁 | 安徽安庆 | 两年正式工作经验 | 独立开发经历</div>
 			<div id="item">
 				<p>工作技能</p>
 				<div>
@@ -75,7 +75,7 @@
 						</div>
 					</div>
 					<div id="skill_container">
-						<span>异步处理、JetPack实践、Android动画、音频处理</span>
+						<span>自定义View、异步处理、JetPack实践、Android 高级 UI</span>
 						<div>
 							<div style="width:80%"></div>
 						</div>
@@ -87,15 +87,15 @@
 						</div>
 					</div>
 					<div id="skill_container">
-						<span>Git（代码托管、版本维护）</span>
-						<div>
-							<div style="width:70%"></div>
-						</div>
-					</div>
-					<div id="skill_container">
 						<span>C、Linux、Espresso、Android逆向</span>
 						<div>
 							<div style="width:20%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>Git（代码托管、版本维护）</span>
+						<div>
+							<div style="width:70%"></div>
 						</div>
 					</div>
 				</div>
@@ -104,17 +104,31 @@
 			<div id="item">
 				<p>工作经历</p>
 				<div>
-					<span>2019-07 - 至今</span>
+					<span>2020-10 - 至今</span>
+					<div>
+						<p>安卓开发工程师</p>
+						<p1>上海房多多网络科技有限公司,  上海</p1>
+						<p2>负责《房云》及《多多卖房》Android 端的研发及维护工作,先后完成"淘客广场"、"获客管理"、"案场助理数据看板"等多个模块。</p2>
+						<ul>
+							<li>项目架构为 MVVM，Kotlin 搭配 JetPack 系列组件实现。
+							<li>databinding实践、筛选Dialog调优、基础 Dialog 封装、基础组件库开发。
+							<li>定制 Gson 的 TypeAdapter 方法，去除所有后端强制赋予的 null 值，在源头保证空安全。
+							<li>Flutter 基础
+						</ul>
+					</div>
+
+				</div>
+				<div>
+					<span>2019-07 - 2020-09</span>
 					<div>
 						<p>安卓开发工程师</p>
 						<p1>上海莫能臣智能科技有限公司,  上海</p1>
-						<p2>负责<a href="https://www.haoduoqupu.com" target="_blank">《好多曲谱》</a>Android 端 APP 的研发及维护工作，核心功能为听音智能翻页。</p2>
-						<p2>应用更新、无限Banner、音频录制与保存、mp3与pcm互转、多播放状态的启停、曲谱涂鸦、Navigation定制。</p2>
+						<p2>负责<a href="https://www.haoduoqupu.com" target="_blank">《好多曲谱》</a>Android 端的研发及维护工作，核心功能为听音智能翻页。</p2>
+						<p2>无限Banner | 音频处理及JNI算法交互 | 曲谱滚动涂鸦 | Navigation定制</p2>
 						<ul>
-							<li>除兼容安卓过时方法外，解决所有Lint警告。积极排查内存泄漏。百分百还原设计稿的前提下不断优化代码质量、不断改进程序架构。</li>
-							<li>使用 Kotlin 开发，采用单 Activity 多 Fragment 的模式，并分离出 Presenter 方便单元测试，采用 JetPack Navigation 配合 DrawerLayout及自定义 TabBar 定制主界面，并适配横竖屏场景，使用 MotionLayout 完成复杂动画。</li>
-							<li>提高启动及响应速度，使用路由活动配合主题进行开屏渲染，延迟启动第三方SDK，扁平化布局避免过度绘制。在高性能、高质量完成需求的前提下给界面点缀合适的动效。包体积优化、JNI交互内存优化。</li>
-							<li>使用espresso及bash脚本加快测试速度，提高迭代效率。关注各平台最新安卓技术资讯及博客分享，互相交流学习以不断进步并持续优化项目。</li>
+							<li>单 Activity 模式，采用 Navigation 组件配合抽屉布局定制主界面，横竖、大小屏适配。
+							<li>启动速度、包体积、性能、过渡绘制优化，对技术满怀热情且有高昂的设计欲望。
+							<li>关注各平台安卓技术资讯及博客分享，互相交流学习以不断进步并持续优化项目。
 						</ul>
 					</div>
 
@@ -125,10 +139,9 @@
 						<p>安卓开发工程师(实习)</p>
 						<p1>上海得帆信息技术有限公司,  上海</p1>
 						<p2>作为实习生进入公司，参与香港中文大学移动门户及三菱智能电梯等项目。</p2>
-						<p2>港中大及三菱项目的用户模块并接入推送模块、地图模块，以及三菱电梯的蓝牙服务模块。</p2>
 						<ul>
-							<li>Java语言，分工明确，敏捷开发，自定义View、事件分发机制以及多线程处理等概念“从理论到实战”，熟悉了企业级应用的开发规范和框架选型。
-							<li>开始积累开发经验，定期总结、分享技术问题及解决方案。</li>
+							<li>参与并完成港中大及三菱项目的"用户模块"并接入推送、地图、蓝牙服务。
+							<li>首次接触互联网公司及企业项目，对开发流程、团队协作有了清晰的认识。
 						</ul>
 					</div>
 				</div>
@@ -143,7 +156,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 </body>
 <html>
