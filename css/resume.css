@@ -8,7 +8,10 @@ div{box-sizing:border-box;}
 	
 #content{width:100%;;height:100%; overflow:scroll;}
 
-#head{width:100%;padding:0.24rem;display:flex;flex-direction:column;color:#8d5d31;}
+#head{width:100%;padding:0.24rem;display:flex;flex-direction:row;color:#8d5d31;}
+#head > div{flex:1;display:flex;flex-direction:column;color:#8d5d31;}
+#head > a {line-height:0px;}
+#head > a > img{width:0.6rem;height:0.6rem;}
 #title_name{font-size:0.36rem;line-height:0.46rem;font-weight:bold;}
 #title_title{font-size:0.16rem;line-height:0.21rem;margin-bottom:0.08rem;font-weight:bold;}
 #title_contact{font-size:0.11rem;line-height:0.21rem;width:100%;font-weight:bold;}
@@ -25,7 +28,7 @@ div{box-sizing:border-box;}
 #item > div > div{margin-left:1.20rem;}
 #item > div > div > p{font-size:0.14rem;font-weight:bold;margin:0 0 0.05rem 0;}
 #item > div > div > p1{font-weight:bold;margin:0 0 0.05rem 0;display:block;}
-#item > div > div > p2{margin:0 0 0.02rem 0;display:block;}
+#item > div > div > p2{margin:0 0 0.04rem 0;display:block;}
 #item > div > div > ul{margin:0;padding:0;}
 #item > div > div > ul>li{margin:0 0 0 0.16rem;user-select:none;border:0;padding:0;}
 
