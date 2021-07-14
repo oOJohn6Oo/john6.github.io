@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		John's Resume
+	</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
+    <script type="text/javascript">
+		function setRem(width) {
+		  // 设置页面根节点字体大小
+			let w = document.getElementById("content").offsetWidth;
+		  document.documentElement.style.fontSize = w / 610*100 + 'px';
+		}
+		window.addEventListener('resize', setRem);
+		window.onload = setRem;
+    </script>
+	<link rel="stylesheet" type="text/css" href="../css/resume.css"/>
+</head>
+<body>
+		<div id="content">
+			<div id="head">
+				<span id="title_name">Liu Qiang</span>
+				<span id="title_title">Android Developer</span>
+				<div id="title_contact">Moblie&nbsp;&nbsp;&nbsp;<span>+86 18229759005</span></div>
+				<div id="title_contact">Email&nbsp;&nbsp;&nbsp;<span>john6.lq@gmail.com</span></div>
+			</div>
+			<div id="desc">2 years of formal working experience | Independent development experience | Anqing, Anhui Province</div>
+			<div id="item">
+				<p>Skills</p>
+				<div>
+					<div id="skill_container">
+						<span>Java,Kotlin</span>
+						<div>
+							<div style="width:80%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>CustomView,JetPack,Senior UI Design</span>
+						<div>
+							<div style="width:80%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>HTML,CSS</span>
+						<div>
+							<div style="width:50%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>C、Linux、Espresso、Android Reverse</span>
+						<div>
+							<div style="width:20%"></div>
+						</div>
+					</div>
+					<div id="skill_container">
+						<span>Git</span>
+						<div>
+							<div style="width:70%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+			<div id="item">
+				<p>Employment History</p>
+				<div>
+					<span>Oct. 2020 - Apr. 2021</span>
+					<div>
+						<p>Android Developer</p>
+						<p1>Shanghai Fangdd Network Technology Co., Ltd,  Shanghai</p1>
+						<p2>Developed and maintained several modules in <a href="https://fir.fangdd.com/ruwz" target="_blank">《房云》</a>及<a href="https://a.app.qq.com/o/simple.jsp?pkgname=com.fangdd.mobile.realtor" target="_blank">《多多卖房》</a></p2>
+						<ul>
+							<li>The project architecture is MVVM, and the concrete implementation is Kotlin with Jetpack series components.
+							<li>DataBinding practice, filtering Dialog tuning, basic Dialog encapsulation, and basic component library development。
+							<li>Customize the Gson parser to work with Retrofit to provide null security from source.
+							<li>Customize Glide CacheKey to cache dynamic URL images.
+							<li>Flutter basis
+						</ul>
+					</div>
+
+				</div>
+				<div>
+					<span>Jul. 2019 - Sept. 2020</span>
+					<div>
+						<p>Android Developer</p>
+						<p1>Shanghai Venpoo Intelligent Technology Co., Ltd,  Shanghai</p1>
+						<p2>Independently responsible for research and development of<a href="https://www.haoduoqupu.com/app/download" target="_blank">《好多曲谱》</a>, the core function is auto page turning</p2>
+						<ul>
+							<li>Single Activity mode, customized home page with Navigation and DrawerLayout, suitable for horizontal and vertical screen, large and small screen.
+							<li>Start-up speed and package size and performance optimization, package size has been controlled at about 7M during my service.
+							<li>Lead and design the score rolling graffiti plan, realize serialized storage and dual-end unified display of graffiti data.
+							<li>In the JNI level to achieve PCM decode and cooperate with our algorithm team.
+							<li>Obessed with coding and designing, ensuring functionality while achieving elegant dynamic effects.
+							<li>Keep up with the latest Android trend, continuously optimize the project.
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div id="item">
+				<p>Education</p>
+				<div>
+					<span>Sept. 2015 - Jun. 2019</span>
+					<div>
+						<p>Bachelor's Degree, Network Engineering</p>
+						<p1>Changsha University of Science and Technology</p1>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+<html>
